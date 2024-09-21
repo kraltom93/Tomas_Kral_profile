@@ -1,26 +1,67 @@
-/* Styl pro horní navigační lištu */
-nav ul {
+/* Styl pro fixní horní navigační lištu */
+.navbar {
+    position: fixed; /* Fixní pozice lišty */
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
     display: flex;
-    justify-content: center; /* Odkazy budou zarovnané doprostřed */
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: #333; /* Barva pozadí navbaru */
 }
 
-nav ul li {
-    margin: 0 20px; /* Mezery mezi odkazy */
+.navbar ul li {
+    margin: 0 20px;
 }
 
-nav ul li a {
+.navbar ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    padding: 14px 20px;
+    padding: 10px 20px;
     display: block;
 }
 
-nav ul li a:hover {
-    background-color: #555; /* Změna barvy při přejetí myší */
+.navbar ul li a:hover {
+    background-color: #555;
     border-radius: 4px;
+}
+
+/* Styl pro sekci ikon v kontaktech */
+.contact-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly; /* Rovnoměrné rozmístění ikon */
+}
+
+.contact-icons li {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.contact-icons li a {
+    display: inline-block;
+    width: 40px; /* Velikost ikon */
+    height: 40px;
+}
+
+.contact-icons li img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-icons li span {
+    margin-left: 10px; /* Mezery mezi ikonou a textem */
+    font-size: 16px;
+    color: #333;
 }

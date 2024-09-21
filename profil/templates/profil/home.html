@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="{% static 'profil/styles.css' %}">
 </head>
 <body>
-    <!-- Horní navigační lišta -->
-    <nav>
+    <!-- Fixní horní navigační lišta -->
+    <nav class="navbar">
         <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
     </nav>
 
