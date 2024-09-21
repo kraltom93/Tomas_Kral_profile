@@ -1,41 +1,26 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-section {
-    margin: 20px;
-    padding: 20px;
-}
-
-ul {
+/* Styl pro horní navigační lištu */
+nav ul {
+    display: flex;
+    justify-content: center; /* Odkazy budou zarovnané doprostřed */
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333; /* Barva pozadí navbaru */
 }
 
-a {
-    color: #333;
+nav ul li {
+    margin: 0 20px; /* Mezery mezi odkazy */
+}
+
+nav ul li a {
     text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-footer {
-    background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    font-size: 18px;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Změna barvy při přejetí myší */
+    border-radius: 4px;
 }
