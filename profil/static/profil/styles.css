@@ -1,67 +1,60 @@
-/* Styl pro fixní horní navigační lištu */
-.navbar {
-    position: fixed; /* Fixní pozice lišty */
-    top: 0;
-    width: 100%;
-    background-color: #333;
-    z-index: 1000;
+/* Změna - Vycentrování obsahu (fotka a jméno) */
+.centered-content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 10px 0;
+    height: 100vh; /* 100% výšky okna */
+    text-align: center;
 }
 
-.navbar ul {
-    display: flex;
+.name {
+    font-size: 48px; /* Zvětšíme font jména */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.photo img {
+    border-radius: 50%; /* Kruhový tvar fotky */
+    width: 300px; /* Zvýšení šířky fotky */
+    height: 300px; /* Zvýšení výšky fotky */
+}
+
+/* Změna - Styl pro pravou lištu s ikonami */
+.contact-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 20px; /* Vzdálenost od pravého okraje */
+    transform: translateY(-50%); /* Vertikální vycentrování */
+}
+
+.contact-sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-.navbar ul li {
-    margin: 0 20px;
+.contact-sidebar ul li {
+    margin-bottom: 15px; /* Mezery mezi ikonami */
 }
 
-.navbar ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    display: block;
-}
-
-.navbar ul li a:hover {
-    background-color: #555;
-    border-radius: 4px;
-}
-
-/* Styl pro sekci ikon v kontaktech */
-.contact-icons {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-evenly; /* Rovnoměrné rozmístění ikon */
-}
-
-.contact-icons li {
-    display: flex;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.contact-icons li a {
+.contact-sidebar ul li a {
     display: inline-block;
-    width: 40px; /* Velikost ikon */
+    width: 40px;
     height: 40px;
 }
 
-.contact-icons li img {
+.contact-sidebar ul li img {
     width: 100%;
     height: 100%;
 }
 
-.contact-icons li span {
-    margin-left: 10px; /* Mezery mezi ikonou a textem */
-    font-size: 16px;
-    color: #333;
+/* Nastavení pozadí stránky */
+body {
+    background-image: url('{% static 'profil/background.jpg' %}'); /* Nastavení pozadí */
+    background-size: cover; /* Obrázek pokryje celou stránku */
+    background-position: center; /* Vycentrování obrázku */
+    background-repeat: no-repeat; /* Neopakovat obrázek */
+    margin: 0;
+    font-family: Arial, sans-serif;
 }

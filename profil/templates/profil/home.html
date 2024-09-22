@@ -8,25 +8,50 @@
     <link rel="stylesheet" href="{% static 'profil/styles.css' %}">
 </head>
 <body>
-    <!-- Fixní horní navigační lišta -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="{% url 'home' %}">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
-        </ul>
-    </nav>
-
     <!-- Sekce pro jméno a fotku -->
     <header>
-        <div class="profile-container">
-            <h1 class="name">Tomáš Král</h1>
+        <div class="centered-content">
+            <h6 class="name">Tomáš Král</h6> <!-- Jméno vycentrováno -->
             <div class="photo">
                 <img src="{% static 'profil/profil.jpg' %}" alt="Tomáš Král" />
             </div>
         </div>
     </header>
 
-
+    <!-- Vertikální ikony kontaktů v pravé liště -->
+    <aside class="contact-sidebar">
+        <ul>
+            <li>
+                <a href="mailto:kraltomas93@seznam.cz">
+                    <img src="{% static 'profil/icons/email.png' %}" width="30px" height="30px" class="fab fa-email" />
+                </a>
+            </li>
+            <li>
+                <a href="tel:+420731311943">
+                    <img src="{% static 'profil/icons/phone.png' %}" width="30px" height="30px" class="fab fa-phone" />
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/kraltom93" target="_blank">
+                    <img src="{% static 'profil/icons/git.png' %}" width="30px" height="30px" class="fab fa-github" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-kr%C3%A1l-a29451b4/" target="_blank">
+                    <img src="{% static 'profil/icons/linkedin.png' %}" width="30px" height="30px" class="fab fa-linkedin" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/tomas.kral.397/" target="_blank">
+                    <img src="{% static 'profil/icons/fb.png' %}" width="30px" height="30px" class="fab fa-facebook" />
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/tomkral93/" target="_blank">
+                    <img src="{% static 'profil/icons/instagram.png' %}" width="30px" height="30px" class="fab fa-instagram" />
+                </a>
+            </li>
+        </ul>
+    </aside>
+</body>
+</html>
