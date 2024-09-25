@@ -58,12 +58,3 @@
     filter: invert(1); /* Změní barvu ikony na bílou pro lepší kontrast */
 }
 
-/* Nastavení pozadí stránky */
-body {
-    background-image: url('{% static 'profil/background.jpg' %}'); /* Cesta k pozadí */
-    background-size: cover; /* Roztáhnout obrázek na celou obrazovku */
-    background-position: center; /* Vycentrování pozadí */
-    background-repeat: no-repeat; /* Neopakovat obrázek pozadí */
-    margin: 0;
-    font-family: Arial, sans-serif; /* Nastavení fontu */
-}
