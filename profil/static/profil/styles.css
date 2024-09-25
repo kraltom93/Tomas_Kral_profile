@@ -8,32 +8,34 @@
     text-align: center;
 }
 
+/* Změna velikosti jména a použití moderního fontu */
 .name {
-    font-size: 36px;
+    font-size: 64px; /* Zvětšení fontu jména */
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif; /* Moderní sans-serif font */
 }
 
-/* Zvětšená profilová fotka */
+/* Zvětšení a úprava fotky bez kruhového tvaru */
 .photo img {
-    border-radius: 50%; /* Kruhový tvar fotky */
-    width: 300px; /* Zvýšená šířka fotky */
-    height: 300px; /* Zvýšená výška fotky */
+    width: 600px; /* Zvýšení šířky fotky */
+    height: auto; /* Zachování proporcí */
+    border-radius: 20%; /* Odstranění kruhového tvaru */
 }
 
-/* Vertikální lišta s ikonami kontaktů */
+/* Styl pro vertikální lištu s ikonami kontaktů */
 .vertical-navbar {
     position: fixed;
     top: 0;
     right: 0;
     width: 60px; /* Šířka lišty */
     height: 100vh; /* 100% výšky okna */
-    background-color: #333; /* Tmavé pozadí lišty */
+    background-color: #333; /* Pozadí lišty */
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px; /* Horní mezera */
-    z-index: 1000; /* Zajištění, aby lišta byla nad obsahem */
+    z-index: 1000;
 }
 
 .vertical-navbar ul {
@@ -55,6 +57,10 @@
 .vertical-navbar ul li img {
     width: 100%;
     height: 100%;
-    filter: invert(1); /* Změní barvu ikony na bílou pro lepší kontrast */
+    filter: invert(1); /* Změní barvu ikony na bílou pro kontrast */
 }
 
+/* Pozadí stránky */
+body {
+    font-family: Arial, sans-serif;
+}

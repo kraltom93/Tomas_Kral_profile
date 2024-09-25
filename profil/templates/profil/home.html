@@ -7,22 +7,11 @@
     <title>Tomas Kral</title>
     <link rel="stylesheet" href="{% static 'profil/styles.css' %}">
 </head>
-<body>
+<body style="background-image: url('{% static 'profil/background.jpg' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
     <!-- Sekce pro jméno a fotku -->
     <header>
         <div class="centered-content">
-            <h6 class="name">Tomáš Král</h6> <!-- Jméno vycentrováno -->
-            <div class="photo">
-                <img src="{% static 'profil/profil.jpg' %}" alt="Tomáš Král" />
-            </div>
-        </div>
-    </header>
-
-<body style="background-image: url('{% static 'profil/background.jpg' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <!-- Obsah stránky -->
-    <header>
-        <div class="centered-content">
-            <h6 class="name">Tomáš Král</h6>
+            <h1 class="name">Tomáš Král</h1> <!-- Jméno vycentrováno a zvětšeno -->
             <div class="photo">
                 <img src="{% static 'profil/profil.jpg' %}" alt="Tomáš Král" />
             </div>
@@ -30,36 +19,36 @@
     </header>
 
     <!-- Vertikální ikony kontaktů v pravé liště -->
-    <aside class="vertical-navbar">  <!-- Upravíme class na 'vertical-navbar' -->
+    <aside class="vertical-navbar">
         <ul>
             <li>
                 <a href="mailto:kraltomas93@seznam.cz">
-                    <img src="{% static 'profil/icons/email.png' %}" alt="Email" />
+                    <img src="{% static 'profil/icons/email.png' %}" width="30px" height="30px" />
                 </a>
             </li>
             <li>
                 <a href="tel:+420731311943">
-                    <img src="{% static 'profil/icons/phone.png' %}" alt="Telefon" />
+                    <img src="{% static 'profil/icons/phone.png' %}" width="30px" height="30px" />
                 </a>
             </li>
             <li>
                 <a href="https://github.com/kraltom93" target="_blank">
-                    <img src="{% static 'profil/icons/git.png' %}" alt="Github" />
+                    <img src="{% static 'profil/icons/git.png' %}" width="30px" height="30px" />
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/tom%C3%A1%C5%A1-kr%C3%A1l-a29451b4/" target="_blank">
-                    <img src="{% static 'profil/icons/linkedin.png' %}" alt="LinkedIn" />
+                    <img src="{% static 'profil/icons/linkedin.png' %}" width="30px" height="30px" />
                 </a>
             </li>
             <li>
                 <a href="https://www.facebook.com/tomas.kral.397/" target="_blank">
-                    <img src="{% static 'profil/icons/fb.png' %}" alt="Facebook" />
+                    <img src="{% static 'profil/icons/fb.png' %}" width="30px" height="30px" />
                 </a>
             </li>
             <li>
                 <a href="https://www.instagram.com/tomkral93/" target="_blank">
-                    <img src="{% static 'profil/icons/instagram.png' %}" alt="Instagram" />
+                    <img src="{% static 'profil/icons/instagram.png' %}" width="30px" height="30px" />
                 </a>
             </li>
         </ul>
