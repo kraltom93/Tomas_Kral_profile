@@ -6,29 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tomas Kral</title>
     <link rel="stylesheet" href="{% static 'profil/styles.css' %}">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
 </head>
-<body style="background-image: url('{% static 'profil/background.jpg' %}'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <!-- Sekce pro jméno a fotku -->
-    <header>
+<body>
+    <!--Sekce pro jméno a fotku -->
+    <header class="main-header">
         <div class="centered-content">
-            <h1 class="name">Tomáš Král</h1> <!-- Jméno vycentrováno a zvětšeno -->
+            <h1 class="name">Tomáš Král</h1>
             <div class="photo">
                 <img src="{% static 'profil/profil.jpg' %}" alt="Tomáš Král" />
             </div>
         </div>
     </header>
 
-    <!-- Sekce About me -->
+    <!--Sekce About me -->
     <section class="about-me">
-        <h2>About me</h2>
-        <p>
-            S pětiletou zkušeností jako vedoucí výroby v oblasti termokamer a termovizních systémů jsem vybaven pečlivostí,
-            organizačními schopnostmi a dovednostmi vedení týmu, které mi umožňují úspěšně řídit pracovní procesy.
-            Své schopnosti v oblasti time managementu uplatňuji k efektivnímu plánování a optimalizaci výrobních operací.
-            Své úsilí soustřeďuji na dosažení cílů společnosti a jsem motivován neustálým osobním rozvojem. Mým zájmem je
-            kreativní a pozitivní přemýšlení, které mi pomáhá neustále se zdokonalovat jak v profesionálním, tak i osobním životě.
-        </p>
+        <h2>About Me</h2>
+        <p> Jsem Milacek</p>
     </section>
+
+    <!--Sekce Experience -->
+    <section class="experience">
+        <h2>Experience</h2>
+        <p>Zkušenosti...</p>
+    </section>
+
+    <!--Sekce Skills -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <p>Dovednosti...</p>
+    </section>
+
+    <!--Sekce Interesting Things -->
+    <section class="interesting-things">
+        <h2>Interesting Things</h2>
+        <p>Zajímavé věci...</p>
+    </section>
+</body>
+</html>
+
 
     <!-- Vertikální ikony kontaktů v pravé liště -->
     <aside class="vertical-navbar">

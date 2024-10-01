@@ -1,3 +1,55 @@
+/* Změna: Nastavení základního pozadí, písma a barev */
+body {
+    background-color: #f7f7ec; /* Tmavé pozadí */
+    font-family: 'Open Sans', sans-serif; /* Moderní font */
+    color: whitesmoke; /* Barva textu */
+    margin: 0;
+    padding: 0;
+}
+
+/* Změna: Hlavní hlavička - jméno a fotka */
+.main-header {
+    text-align: center;
+    padding: 50px 0; /* Vertikální mezery */
+}
+
+/* Změna: Velikost jména */
+.main-header .name {
+    font-size: 78px; /* Zvýšení velikosti textu jména */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Změna: Zvětšení fotky a odstranění kulatého tvaru */
+.main-header .photo img {
+    width: 700px; /* Zvýšení velikosti fotky */
+    height: auto;
+    border-radius: 20%; /* Odebrání kruhového tvaru */
+}
+
+/* Změna: Styling sekce About Me a dalších */
+.about-me, .experience, .skills, .interesting-things {
+    padding: 80px 20px; /* Vertikální a horizontální mezery */
+    background-color: #2d3342; /* Tmavší odstín pro sekce */
+    margin: 20px 0; /* Odstup mezi jednotlivými sekcemi */
+}
+
+/* Změna: Nadpisy sekcí */
+.about-me h2, .experience h2, .skills h2, .interesting-things h2 {
+    font-size: 36px; /* Velikost nadpisů */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Zvýraznění nadpisů */
+    margin-bottom: 20px;
+}
+
+/* Změna: Obsah sekcí */
+.about-me p, .experience p, .skills p, .interesting-things p {
+    font-size: 18px;
+    line-height: 1.6; /* Pro lepší čitelnost */
+    text-align: justify; /* Zarovnání do bloku */
+}
+
 /* Vycentrování obsahu (fotka a jméno) */
 .centered-content {
     display: flex;
@@ -13,32 +65,9 @@
     font-size: 48px; /* Velikost nadpisu Tomáš Král */
     font-weight: bold; /* Tlustší font */
     margin-bottom: 20px;
+    color: navy;
     font-family: 'Roboto', sans-serif; /* Nastavení fontu */
     font-style: italic; /* Volitelně kurzíva */
-}
-
-.about-me h1 {
-    font-size: 36px; /* Velikost nadpisu "About me" */
-    font-weight: bold; /* Zvýraznění textu */
-    margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif; /* Styl písma */
-    text-transform: uppercase; /* Vše velkými písmeny */
-    letter-spacing: 2px; /* Zvýšené mezery mezi písmeny */
-}
-
-.about-me p {
-    font-size: 18px; /* Velikost textu */
-    line-height: 1.6; /* Pro lepší čitelnost */
-    text-align: justify; /* Zarovnáno do bloku */
-    font-family: 'Open Sans', sans-serif; /* Styl písma */
-    font-weight: 300; /* Lehčí váha fontu */
-}
-
-/* Zvětšení a úprava fotky bez kruhového tvaru */
-.photo img {
-    width: 600px; /* Zvýšení šířky fotky */
-    height: auto; /* Zachování proporcí */
-    border-radius: 20%; /* Odstranění kruhového tvaru */
 }
 
 /* Styl pro vertikální lištu s ikonami kontaktů */
@@ -76,11 +105,4 @@
     width: 100%;
     height: 100%;
     filter: invert(1); /* Změní barvu ikony na bílou pro kontrast */
-}
-
-/* Pozadí stránky */
-body {
-    font-family: Arial, sans-serif;
-
-
 }
