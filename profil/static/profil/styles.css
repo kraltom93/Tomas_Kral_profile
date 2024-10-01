@@ -10,10 +10,28 @@
 
 /* Změna velikosti jména a použití moderního fontu */
 .name {
-    font-size: 64px; /* Zvětšení fontu jména */
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-family: 'Arial', sans-serif; /* Moderní sans-serif font */
+    font-size: 48px; /* Velikost nadpisu Tomáš Král */
+    font-weight: bold; /* Tlustší font */
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif; /* Nastavení fontu */
+    font-style: italic; /* Volitelně kurzíva */
+}
+
+.about-me h1 {
+    font-size: 36px; /* Velikost nadpisu "About me" */
+    font-weight: bold; /* Zvýraznění textu */
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif; /* Styl písma */
+    text-transform: uppercase; /* Vše velkými písmeny */
+    letter-spacing: 2px; /* Zvýšené mezery mezi písmeny */
+}
+
+.about-me p {
+    font-size: 18px; /* Velikost textu */
+    line-height: 1.6; /* Pro lepší čitelnost */
+    text-align: justify; /* Zarovnáno do bloku */
+    font-family: 'Open Sans', sans-serif; /* Styl písma */
+    font-weight: 300; /* Lehčí váha fontu */
 }
 
 /* Zvětšení a úprava fotky bez kruhového tvaru */
@@ -63,4 +81,6 @@
 /* Pozadí stránky */
 body {
     font-family: Arial, sans-serif;
+
+
 }
